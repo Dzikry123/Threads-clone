@@ -1,0 +1,97 @@
+// register
+{
+    "id": "2f828d49-a431-47b7-ab3f-09f8e455d39f",
+    "aud": "authenticated",
+    "role": "authenticated",
+    "email": "daeri757@gmail.com",
+    "phone": "",
+    "confirmation_sent_at": "2026-06-08T09:07:18.410088667Z",
+    "app_metadata": {
+        "provider": "email",
+        "providers": [
+            "email"
+        ]
+    },
+    "user_metadata": {
+        "email": "daeri757@gmail.com",
+        "email_verified": false,
+        "phone_verified": false,
+        "sub": "2f828d49-a431-47b7-ab3f-09f8e455d39f"
+    },
+    "identities": [
+        {
+            "identity_id": "368125eb-71fa-4710-ad61-6eaca60e9992",
+            "id": "2f828d49-a431-47b7-ab3f-09f8e455d39f",
+            "user_id": "2f828d49-a431-47b7-ab3f-09f8e455d39f",
+            "identity_data": {
+                "email": "daeri757@gmail.com",
+                "email_verified": false,
+                "phone_verified": false,
+                "sub": "2f828d49-a431-47b7-ab3f-09f8e455d39f"
+            },
+            "provider": "email",
+            "last_sign_in_at": "2026-06-08T09:07:18.398388995Z",
+            "created_at": "2026-06-08T09:07:18.398437Z",
+            "updated_at": "2026-06-08T09:07:18.398437Z",
+            "email": "daeri757@gmail.com"
+        }
+    ],
+    "created_at": "2026-06-08T09:07:18.365379Z",
+    "updated_at": "2026-06-08T09:07:19.943829Z",
+    "is_anonymous": false
+}
+
+
+// login
+{
+    "access_token": "eyJhbGciOiJFUzI1NiIsImtpZCI6IjdlZjA2MzcyLWQyMWYtNDI3Ny04ODU0LTY0YzcyMWJiYmNkYyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3pwZXRrY3h5cWtvdW9wbXVodmV5LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIyZjgyOGQ0OS1hNDMxLTQ3YjctYWIzZi0wOWY4ZTQ1NWQzOWYiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzgwOTEzNTc2LCJpYXQiOjE3ODA5MDk5NzYsImVtYWlsIjoiZGFlcmk3NTdAZ21haWwuY29tIiwicGhvbmUiOiIiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJlbWFpbCIsInByb3ZpZGVycyI6WyJlbWFpbCJdfSwidXNlcl9tZXRhZGF0YSI6eyJlbWFpbCI6ImRhZXJpNzU3QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6IjJmODI4ZDQ5LWE0MzEtNDdiNy1hYjNmLTA5ZjhlNDU1ZDM5ZiJ9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNzgwOTA5OTc2fV0sInNlc3Npb25faWQiOiJjOGRjNDhhZi0yZTg2LTRhYjgtYTM4YS1hZGExZjYyNmMxN2UiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.9TDW27tvjAKpJGY1wxnrYtYZR6wnQWpwuuLcX-EZgKyGsDIl-krwVnkkg2n4nW0gnGP45X0M9-2eYQ4crvD18Q",
+    "token_type": "bearer",
+    "expires_in": 3600,
+    "expires_at": 1780913576,
+    "refresh_token": "4wfpsruyjwz4",
+    "user": {
+        "id": "2f828d49-a431-47b7-ab3f-09f8e455d39f",
+        "aud": "authenticated",
+        "role": "authenticated",
+        "email": "daeri757@gmail.com",
+        "email_confirmed_at": "2026-06-08T09:08:32.471549Z",
+        "phone": "",
+        "confirmation_sent_at": "2026-06-08T09:07:18.410088Z",
+        "confirmed_at": "2026-06-08T09:08:32.471549Z",
+        "last_sign_in_at": "2026-06-08T09:12:56.303632451Z",
+        "app_metadata": {
+            "provider": "email",
+            "providers": [
+                "email"
+            ]
+        },
+        "user_metadata": {
+            "email": "daeri757@gmail.com",
+            "email_verified": true,
+            "phone_verified": false,
+            "sub": "2f828d49-a431-47b7-ab3f-09f8e455d39f"
+        },
+        "identities": [
+            {
+                "identity_id": "368125eb-71fa-4710-ad61-6eaca60e9992",
+                "id": "2f828d49-a431-47b7-ab3f-09f8e455d39f",
+                "user_id": "2f828d49-a431-47b7-ab3f-09f8e455d39f",
+                "identity_data": {
+                    "email": "daeri757@gmail.com",
+                    "email_verified": true,
+                    "phone_verified": false,
+                    "sub": "2f828d49-a431-47b7-ab3f-09f8e455d39f"
+                },
+                "provider": "email",
+                "last_sign_in_at": "2026-06-08T09:07:18.398388Z",
+                "created_at": "2026-06-08T09:07:18.398437Z",
+                "updated_at": "2026-06-08T09:07:18.398437Z",
+                "email": "daeri757@gmail.com"
+            }
+        ],
+        "created_at": "2026-06-08T09:07:18.365379Z",
+        "updated_at": "2026-06-08T09:12:56.327559Z",
+        "is_anonymous": false
+    },
+    "weak_password": null
+}
