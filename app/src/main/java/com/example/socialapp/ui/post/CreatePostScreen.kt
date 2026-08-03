@@ -304,7 +304,7 @@ fun CreatePostScreen(
                                 },
                                 modifier = Modifier
                                     .align(Alignment.TopEnd)
-                                    .padding(8.dp)
+                                    .padding(16.dp)
                                     .size(28.dp)
                                     .background(Color.Black.copy(alpha = 0.6f), CircleShape)
                             ) {

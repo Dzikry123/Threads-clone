@@ -68,15 +68,19 @@ import com.example.socialapp.ui.components.AudioPlayer
 import com.example.socialapp.ui.components.VideoPlayer
 import com.example.socialapp.ui.navigation.NavigateEvent
 import com.example.socialapp.ui.viewmodel.DetailPostViewModel
+import com.example.socialapp.ui.viewmodel.ProfileViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun UpdatePostScreen(
     modifier: Modifier = Modifier,
     onBackHome: () -> Unit,
-    detailPostViewModel: DetailPostViewModel = hiltViewModel()
+    detailPostViewModel: DetailPostViewModel = hiltViewModel(),
+    profileViewModel: ProfileViewModel = hiltViewModel()
 ) {
     val state by detailPostViewModel.postState.collectAsStateWithLifecycle()
+    val profileState by profileViewModel.profileState.collectAsStateWithLifecycle()
+
     val scrollState = rememberScrollState()
 
     LaunchedEffect(Unit) {
@@ -190,21 +194,13 @@ fun UpdatePostScreen(
                             horizontalAlignment = Alignment.CenterHorizontally,
                             modifier = Modifier.width(42.dp)
                         ) {
-                            Box(
+                            AsyncImage(
+                                model = profileState.profile?.avatarUrl,
+                                contentDescription = null,
                                 modifier = Modifier
-                                    .size(42.dp)
-                                    .clip(CircleShape)
-                                    .background(Color.LightGray)
-                            ) {
-                                Text("U", modifier = Modifier.align(Alignment.Center), fontWeight = FontWeight.Bold)
-                            }
-                            Spacer(modifier = Modifier.height(8.dp))
-                            Box(
-                                modifier = Modifier
-                                    .width(2.dp)
-                                    .weight(1f, fill = false)
-                                    .heightIn(min = 60.dp)
-                                    .background(Color.LightGray.copy(alpha = 0.5f))
+                                    .fillMaxWidth()
+                                    .clip(RoundedCornerShape(18.dp)),
+                                contentScale = ContentScale.Crop
                             )
                         }
 
@@ -213,7 +209,7 @@ fun UpdatePostScreen(
                             modifier = Modifier.weight(1f),
                             verticalArrangement = Arrangement.spacedBy(8.dp)
                         ) {
-                            Text(text = "username_anda", fontWeight = FontWeight.Bold, fontSize = 15.sp)
+                            Text(text = profileState.profile?.username ?: "no anonymous", fontWeight = FontWeight.Bold, fontSize = 15.sp)
 
                             // Input Description
                             BasicTextField(
@@ -264,7 +260,7 @@ fun UpdatePostScreen(
                                         },
                                         modifier = Modifier
                                             .align(Alignment.TopEnd)
-                                            .padding(8.dp)
+                                            .padding(16.dp)
                                             .size(28.dp)
                                             .background(Color.Black.copy(alpha = 0.6f), CircleShape)
                                     ) {

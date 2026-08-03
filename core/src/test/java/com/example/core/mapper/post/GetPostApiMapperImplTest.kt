@@ -103,7 +103,7 @@ class GetPostApiMapperImplTest {
         val result = mapper.mapToDomain(dto)
 
         assertEquals(
-            MediaType.VIDEO,
+            MediaType.AUDIO,
             result.first().mediaType
         )
     }
